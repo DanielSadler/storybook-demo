@@ -26,8 +26,8 @@
   background-color: #ac6ea2;
   z-index: -1;
   position: absolute;
-  height: 35px;
-  width: 35px;
+  height: 100px;
+  width: 100px;
   border-radius: 100%;
 }
 
