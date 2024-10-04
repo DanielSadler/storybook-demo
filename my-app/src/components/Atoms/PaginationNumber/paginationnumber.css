@@ -1,0 +1,50 @@
+.button {
+  all: unset;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 35px; /* Adjust as needed */
+  height: 35px; /* Adjust as needed */
+}
+
+.pagination-number {
+  all: unset;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+.pagination-number-selected {
+  color: #fad3f3;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.pagination-circle-selected {
+  background-color: #ac6ea2;
+  z-index: -1;
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+}
+
+.button:hover .pagination-circle {
+  background-color: #e393d6;
+  z-index: -2;
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  opacity: 50%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover .pagination-circle-selected {
+  background-color: #83577d;
+  opacity: 100%;
+  z-index: -1;
+  transition: background-color 0.2s ease-in-out;
+}

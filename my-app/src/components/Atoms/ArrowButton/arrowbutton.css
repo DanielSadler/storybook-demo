@@ -1,0 +1,6 @@
+.arrow-button {
+  all: unset;
+}
+.arrow-button:hover {
+  cursor: pointer;
+}

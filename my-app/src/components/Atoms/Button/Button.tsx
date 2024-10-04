@@ -13,7 +13,7 @@ export interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: 'small' | 'medium';
   /**
    * Button contents
    */
@@ -22,6 +22,8 @@ export interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+
+  id?: string;
 }
 
 /**
@@ -32,13 +34,22 @@ export const Button = ({
   size = 'medium',
   backgroundColor,
   label,
+  id,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary
+    ? 'storybook-button--primary'
+    : 'storybook-button--secondary';
   return (
     <button
+      id={id}
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={[
+        'storybook-button',
+        `storybook-button--${size}`,
+        `focus:outline-offset-4`,
+        mode,
+      ].join(' ')}
       {...props}
     >
       {label}

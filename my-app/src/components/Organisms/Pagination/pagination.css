@@ -1,0 +1,27 @@
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  max-width: 300px;
+}
+
+.numbers-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+.numbers {
+  all: unset;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
